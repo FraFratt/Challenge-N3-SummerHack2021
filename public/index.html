@@ -1,0 +1,139 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;500;800&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet"/>
+
+    <title>Vamos de nuevo</title>
+</head>
+<body>
+<header class="container">
+    <nav class="row">
+        <div class="col-12">
+            <h1> Papelito</h1>
+        </div>
+    </nav>
+</header>
+
+<section class="container" id="biggy">
+    <div class="row">
+        <div class="col-4">
+
+<section id="pantalladetalle">
+            <img src="images/Carnes.svg" alt="" class="pantalladetalle__icono" id="pantalladetalleicono">
+              <h2 id="pantalladetalleproducto">Pantalla detalle producto</h2>
+              <p id="pantalladetalleinfo">que rica carne</p>
+          <button id="pantalladetallecerrar">Cerrar</button> 
+</section>
+
+
+        </div>
+
+        <div class="col-4" id="lista">
+            <p class="papelito" id="pantallavacio"><span>Che!</span><br> Lista vacía<br><span> 😐</span></p>
+
+                <ul class="list-group" id="listalistado">
+                  
+                  
+                </ul>
+
+
+            
+        </div>
+        
+<div class="col-4" id="modalflotero">
+
+
+
+
+                        <!-- MODALLLLL-->
+                        <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#pantallainicioModal" id="popupeme">
+  +
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="pantallainicioModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Listadito</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body" id="verdelista">
+        <div class="mb-3">
+          <label for="pantallacargaproducto" class="form-label">Ingresá producto</label>
+          <input type="email" class="form-control" id="pantallacargaproducto" placeholder="Por ejemplo: Carne">
+        </div>
+      </div>
+
+        <!-- carga iconos-->
+      <div class="mb-3">
+        <label for="pantallacateg" class="form-label">Seleccioná una categoría&nbsp</label>
+        <select id="pantallacateg" class="form-select">
+          <option value="images/Varios.svg">Varios</option>
+          <option value="images/Lacteos.svg">Lacteos</option>
+          <option value="images/Carnes.svg">Carnes</option>
+          <option value="images/Frutasverduras.svg">Frutas y verduras</option>
+          <option value="images/Legumbres.svg">Legumbres</option>
+          <option value="images/Panaderia.svg">Panadería</option>
+          <option value="images/Snacks.svg">Snacks</option>
+          <option value="images/Congelados.svg">Congelados</option>
+          <option value="images/Conservas.svg">Conservas</option>
+          <option value="images/Limpieza.svg">Limpieza</option>
+        </select>
+      </div>
+      <!-- text area detalles -->
+      <div class="mb-3">
+        <label for="pantallacargainfo" class="form-label">Sumá detalles a tu compra&nbsp</label>
+        <textarea class="form-control" id="pantallacargainfo" rows="3"></textarea>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary" id="agregador">Agregar y guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+</div>
+   
+
+</section>
+
+
+
+
+
+
+
+<footer class="container">
+    <div class="row">
+        <div class="col-12">
+            <p> Hecho por <a href="https://instagram.com/frafratt" >FraFratt</a> | 🍨 Reto Semanal <strong>#3</strong> SummerHack 2021 <a href="https://instagram.com/soydevrock" >@Soydevrock</a> </p>
+        </div>
+    </div>
+
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.5/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
